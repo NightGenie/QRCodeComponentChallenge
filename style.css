@@ -1,0 +1,67 @@
+/* 
+- Font size (paragraph): 15px
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 */
+
+:root {
+    --ff-sans: 'Outfit', sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --fs-400: 0.9375rem;
+    --fs-700: 1.375rem;
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 1rem;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-normal);
+    line-height: 1.7;
+}
+
+body{
+    margin: 0;
+    padding-block-start: 5rem;
+    padding-block-end: 5rem;
+    background-color: var(--clr-light-gray);
+}
+.wrapper{
+    padding: 1rem;
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    margin-inline: auto;
+    margin-block-end: 5rem;
+    max-width: 300px;
+    display: grid;
+}
+h1{
+    text-align: center;
+    font-size: var(--fs-700);
+}
+p{
+    color: var(--clr-grayish-blue);
+    padding-inline: 1rem;
+    text-align: center;
+    font-size: var(--fs-400);
+    
+}
+
+.attribution{
+    text-align: center;
+}
+
